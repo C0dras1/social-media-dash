@@ -42,7 +42,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
-  grid-template-rows: 1fr 5fr 1fr 5fr;
+  grid-template-rows: 1fr 4fr 1fr 4fr;
   grid-template-areas: 
     "header toggle"
     "overview overview"
@@ -83,14 +83,31 @@ body {
 
 /* CARD AND ELEMENTS STYLING */
 .card {
-  background-color: var(--LT-text-gray);
+  background-color: var(--LT-Card-BG);
   display: grid;
-  justify-content: space-around;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  width: 100%;
 }
 
-.card .SM-icon {
-  display: inline-block;
+.tag {
+  justify-self: center;
+  align-self: center;
 }
+
+.SM-number {
+  font-size: 3.5rem;
+}
+
+.followers {
+  align-self: start;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--LT-text-gray)
+}
+
+
+
 
 
 /* DETAIL LAYOUT */
