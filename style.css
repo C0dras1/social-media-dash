@@ -41,7 +41,7 @@ body {
 }
 
 body::before {
-  height: 30vh;
+  height: 32vh;
   width: 100%;
   background-color: var(--LT-BG-pattern);
   z-index: -2;
@@ -89,6 +89,7 @@ body::before {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1.5rem;
+  padding-top: 1.5%;
 }
 
 /* Header STYLES */
@@ -101,8 +102,8 @@ body::before {
 }
 
 .toggle h4 {
-  display: inline-block;
-  align-self: center;
+  position: absolute;
+  transform: translate(-120%, 45%);
 }
 
 /* The switch - the box around the slider */
@@ -217,7 +218,7 @@ input:checked + .slider:before {
 }
 .tag span {
   position: absolute;
-  transform: translate(-20%, -15%);
+  transform: translate(-20%, -18%);
 }
 
 .SM-number {
@@ -266,4 +267,18 @@ input:checked + .slider:before {
 
 .mini-card {
   background-color: var(--LT-Card-BG);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10% 8%;
 }
+
+.mini-card img {
+  justify-self: end;
+}
+
+.mini-card span {
+  justify-self: end;
+}
+
+
